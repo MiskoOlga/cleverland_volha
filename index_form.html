@@ -1,0 +1,65 @@
+<!doctype html>
+<head>
+    <mate charset="utf-8">
+
+</head>
+<body>
+<fieldset>
+    <legend>
+        Сведения о пользователе
+    </legend>   
+    <form name="users">
+        <p>
+            Ваше имя:
+            <input type="text" name="userName" size="38">
+        </p>
+        <p>
+            Ваш возраст:
+            <input type="text" name="userAge" list="age">
+            <datalist id="age">
+                <option value="1-10 лет">
+                <option value="11-16 лет">
+                <option value="17-22 лет">
+                <option value="23-35 лет">
+                <option value="36-50 лет">
+                <option value=">50 лет">
+            </datalist>
+        </p>
+
+        <p>
+            Какую операционную систему используете?
+            <select name="os">
+                <option value="1">Windows</option>
+                <option value="2">Linux</option>
+                <option value="3">MacOS</option>
+                <option value="4">Другое</option>          
+            </select>  
+        </p>
+        <p>
+            Какие браузеры Вы используете?<br>
+            <label><input type="checkbox" name="ME" value="1" checked> Microsoft Edge</label><br>
+            <label><input type="checkbox" name="GH" value="2"> Google Chrome</label><br>
+            <label><input type="checkbox" name="FF" value="3"> FireFox</label><br>
+            <label><input type="checkbox" name="O" value="4"> Opera</label><br>
+            <label><input type="checkbox" name="DR" value="5"> Другое</label><br>
+
+        </p>
+        <p>
+            Связана ли Ваша деятельность с компьютером?<br>
+            <label><input type="radio" name="comp" value="1"> Да<br></label>
+            <label><input type="radio" name="comp" value="2"> Нет
+            </label>
+        </p>
+        <p>
+            Дополнительная информация<br>
+            <textarea name="inform" cols="30" rows="6"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="отправить">
+            <input type="reset" value="очистить">
+        </p>
+
+        </form>
+</fieldset>
+</body>
