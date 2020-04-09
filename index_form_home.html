@@ -1,0 +1,77 @@
+<!doctype html>
+<head>
+    <mate charset="utf-8"
+</head>
+
+<body>
+        <font aling="center" size="+3"><b> Работа с формами</b></font>
+        <br>
+    <p>
+    <fieldset>
+        <legend> Регистрационная форма пользователя</legend>
+        <form name="registr">
+            <p>
+                Имя:
+                <input type="text" name="regname">
+            </p>
+            <p>
+                Укажите возраст:
+                <input type="text" name="regAge" list="age">
+                <datalist id="age">
+                    <option value="10-15 лет">
+                    <option value="16-20 лет">
+                    <option value="21-30 лет">
+                    <option value="31-40 лет">
+                    <option value="более 40 лет">
+                </datalist>
+            </p>
+            <p>
+                Укажите пол:    мужской
+                <input type="radio" name="man" value="0">
+                женский
+                <input type="radio" name="woman" value="1">
+            </p>
+            <p>
+                Срана проживания:
+                <select name="contry">
+                    <option>Беларусь</option>
+                    <option>Россия</option>
+                    <option>Другая</option>
+                </select>
+            </p>
+            <p>
+                Владение языками:
+                <label><input type="checkbox" name="rus" value="1">русский</label>
+                <label><input type="checkbox" name="bel" value="2">белорусский</label>
+                <label><input type="checkbox" name="eng" value="3">английский</label>
+            </p>
+            <p>
+                Фото профиля
+                <input type="file" name="foto"> 
+            </p>
+            <p>
+                Введите логин:
+                <input type="text" name="login">
+            </p>
+            <p>
+                Введите пароль:
+                <input type="password" name="password">
+            </p>
+            <p>
+                Повторите пароль:
+                <input type="password" name="password2">
+            </p>
+            <p>
+                <input type="reset" name="reset">
+                <input type="submit" name="submit">
+            </p>
+        </form>
+        
+    </fieldset>
+    </p>
+    <p>
+        Оставить сообщение:<br>
+        <textarea name="text" rows="10" cols="50" placeholder="Введите сообщение размером в 7 строк по 40 символов"></textarea>
+        <br><input type="submit" name="submit2">
+    </p>
+</body>
